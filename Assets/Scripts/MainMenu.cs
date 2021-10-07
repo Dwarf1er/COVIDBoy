@@ -18,6 +18,6 @@ public class MainMenu : MonoBehaviour
 
         newGameButton.onClick.AddListener(() => SceneManager.LoadScene("Game"));
         newGamePlusButton.onClick.AddListener(() => SceneManager.LoadScene("Game"));
-        quitButton.onClick.AddListener(() => Application.Quit() && Console.log("ta mere en shorts"));
+        quitButton.onClick.AddListener(() => Application.Quit());
     }
 }
