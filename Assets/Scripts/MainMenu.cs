@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    Button newGameButton { get; set; }
-    Button newGamePlusButton { get; set; }
-    Button quitButton { get; set; }
+    private Button newGameButton { get; set; }
+    private Button newGamePlusButton { get; set; }
+    private Button quitButton { get; set; }
 
     public void Start()
     {
