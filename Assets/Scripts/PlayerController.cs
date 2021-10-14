@@ -5,13 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D playerRigidbody { get; set; }
-    private BoxCollider2D playerBoxCollider { get; set; }
-    [SerializeField]
-    private float playerMovementSpeed = 5f;
     private Vector2 playerVelocity { get; set; }
     private bool isPlayerOnGround { get; set; }
-
     private Vector2 notMoving { get; set; }
+
+    [SerializeField] private float playerMovementSpeed = 15f;
 
     // Start is called before the first frame update
     private void Start()
@@ -21,11 +19,9 @@ public class PlayerController : MonoBehaviour
         playerVelocity = notMoving;
         isPlayerOnGround = true;
         playerRigidbody = GetComponent<Rigidbody2D>();
-        playerBoxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
-    // As recommended by the official Unity documentation, FixedUpdate is used for physics calculations
     private void Update()
     {
         MovePlayer();
@@ -38,12 +34,22 @@ public class PlayerController : MonoBehaviour
         Vector2 playerHorizontalMovement = transform.right * playerMovementX;
         Vector2 playerFinalVelocity = playerHorizontalMovement.normalized * playerMovementSpeed;
         playerVelocity = playerFinalVelocity;
-        
-        if(playerVelocity != notMoving)
-            playerRigidbody.MovePosition(playerRigidbody.position + playerVelocity * Time.fixedDeltaTime);
 
         if (Input.GetKeyDown(KeyCode.Space) && isPlayerOnGround)
             playerRigidbody.AddForce(Vector3.up * 50, ForceMode2D.Impulse);
+
+        if (playerVelocity != notMoving)
+        {
+            if (playerMovementX == -1)
+                playerRigidbody.velocity = new Vector2(-playerMovementSpeed, playerRigidbody.velocity.y);
+            else
+            {
+                if (playerMovementX == 1)
+                    playerRigidbody.velocity = new Vector2(playerMovementSpeed, playerRigidbody.velocity.y);
+                else
+                    playerRigidbody.velocity = new Vector2(0, playerRigidbody.velocity.y);
+            }
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
