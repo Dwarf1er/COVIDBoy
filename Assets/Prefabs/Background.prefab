@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 3719905389444867793}
   - component: {fileID: 3719905389444867794}
   - component: {fileID: 3719905389444867795}
-  - component: {fileID: 8405509525453272077}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Background (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3719905389444867804}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.675442, y: -0.30941033, z: 319.50232}
+  m_LocalPosition: {x: 15.675442, y: -0.30941033, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4172971709704849990}
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b165ec2539a23044ca486a2248259c5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 213e9df2d22aea0418f5d282cf9efe15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -145,18 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb783272090044641b595f54afe046f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8405509525453272077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3719905389444867804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb783272090044641b595f54afe046f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3719905389503324822
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,8 +157,7 @@ GameObject:
   - component: {fileID: 3719905389503324779}
   - component: {fileID: 3719905389503324820}
   - component: {fileID: 3719905389503324821}
-  - component: {fileID: 5687666129863980906}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3719905389503324822}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5245595, y: -0.30941033, z: 319.50232}
+  m_LocalPosition: {x: -3.5245595, y: -0.30941033, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4172971709704849990}
@@ -232,7 +218,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b165ec2539a23044ca486a2248259c5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 213e9df2d22aea0418f5d282cf9efe15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -302,18 +288,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb783272090044641b595f54afe046f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5687666129863980906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3719905389503324822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb783272090044641b595f54afe046f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7660406544568586167
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +297,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4172971709704849990}
-  m_Layer: 0
+  - component: {fileID: 2989568666781004040}
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,3 +321,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2989568666781004040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660406544568586167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b43dde3907406c45b1b582006e2ef0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cleanPlatform: {fileID: 4937129739516362838, guid: a781b41f25c04ba48be3193b070f033c, type: 3}
+  infectedPlatform: {fileID: 4937129739516362838, guid: add0dad37a1b1bd4c9624ac214432041, type: 3}

@@ -8,7 +8,7 @@ public class BackgroundController : MonoBehaviour
     private float backgroundScrollingSpeed { get; set; }
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         backgroundCollider = GetComponent<BoxCollider2D>();
         backgroundRigidbody = GetComponent<Rigidbody2D>();
@@ -20,7 +20,7 @@ public class BackgroundController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (transform.position.x < -backgroundWidth)
         {
