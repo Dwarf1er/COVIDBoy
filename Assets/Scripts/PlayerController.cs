@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public Animator animator;
+
     private Rigidbody2D playerRigidbody { get; set; }
     private Vector2 playerVelocity { get; set; }
     private bool isPlayerOnGround { get; set; }
@@ -24,6 +26,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
+        animator.SetBool("OnGround", isPlayerOnGround);
         MovePlayer();
     }
 

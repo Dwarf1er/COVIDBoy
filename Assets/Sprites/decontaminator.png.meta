@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 8dd2c2087a38b51479d656feb895b649
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5601980235849742335
+    second: decontaminator_0
+  - first:
+      213: -1529528181275463402
+    second: decontaminator_1
+  - first:
+      213: 5554804539044195591
+    second: decontaminator_2
+  - first:
+      213: 8987170722852583422
+    second: decontaminator_3
+  - first:
+      213: 5028780950861478634
+    second: decontaminator_4
+  - first:
+      213: 3970878058186450714
+    second: decontaminator_5
+  - first:
+      213: 7333572500741335439
+    second: decontaminator_6
+  - first:
+      213: 4242526294069001812
+    second: decontaminator_7
+  - first:
+      213: 8720620108912419385
+    second: decontaminator_8
+  - first:
+      213: 3360907460378906569
+    second: decontaminator_9
+  - first:
+      213: -3044448533588526422
+    second: decontaminator_10
+  - first:
+      213: -4704606404513232343
+    second: decontaminator_11
+  - first:
+      213: -1244732399672848767
+    second: decontaminator_12
+  - first:
+      213: -6869297297287436977
+    second: decontaminator_13
+  - first:
+      213: -2714632580503964055
+    second: decontaminator_14
+  - first:
+      213: -5104243384021267794
+    second: decontaminator_15
+  - first:
+      213: -2527759052580319353
+    second: decontaminator_16
+  - first:
+      213: 2213868434191255842
+    second: decontaminator_17
+  - first:
+      213: 7273329806309045847
+    second: decontaminator_18
+  - first:
+      213: 2552036574266297973
+    second: decontaminator_19
+  - first:
+      213: -53617676392708948
+    second: decontaminator_20
+  - first:
+      213: -2006697746648540151
+    second: decontaminator_21
+  - first:
+      213: -2878332012051455102
+    second: decontaminator_22
+  - first:
+      213: 7251430182075679496
+    second: decontaminator_23
+  - first:
+      213: -2764014265761352845
+    second: decontaminator_24
+  - first:
+      213: -4282028455154823912
+    second: decontaminator_25
+  - first:
+      213: -3785602201576221013
+    second: decontaminator_26
+  - first:
+      213: -3866362534525686744
+    second: decontaminator_27
+  - first:
+      213: 8057498096292899566
+    second: decontaminator_28
+  - first:
+      213: 6432462250342445495
+    second: decontaminator_29
+  - first:
+      213: 8183597159717999617
+    second: decontaminator_30
+  - first:
+      213: 4975142151888387356
+    second: decontaminator_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: decontaminator_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 495
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108ca63f7a4c142b0800000000000000
+      internalID: -5601980235849742335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 495
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6117021193606cae0800000000000000
+      internalID: -1529528181275463402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 495
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70de4723c41a61d40800000000000000
+      internalID: 5554804539044195591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 495
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef73b670828d8bc70800000000000000
+      internalID: 8987170722852583422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea795591a1d9c540800000000000000
+      internalID: 5028780950861478634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 396
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17a8982e846b1730800000000000000
+      internalID: 3970878058186450714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 396
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89a241a55516c560800000000000000
+      internalID: 7333572500741335439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_7
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 396
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ebc34cf2b70ea30800000000000000
+      internalID: 4242526294069001812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 297
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9326ad409cdd50970800000000000000
+      internalID: 8720620108912419385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_9
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 297
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf48d2478754ae20800000000000000
+      internalID: 3360907460378906569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_10
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 297
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa3f7a5032ffb5d0800000000000000
+      internalID: -3044448533588526422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_11
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 297
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a06f2b661e5beb0800000000000000
+      internalID: -4704606404513232343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_12
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 297
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e84153a72d9bee0800000000000000
+      internalID: -1244732399672848767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_13
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 297
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45a1a2d08a5ba0a0800000000000000
+      internalID: -6869297297287436977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 198
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966fb5ffc00b35ad0800000000000000
+      internalID: -2714632580503964055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_15
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 198
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa46488fa51a29b0800000000000000
+      internalID: -5104243384021267794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_16
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 198
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f0c29c8889becd0800000000000000
+      internalID: -2527759052580319353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_17
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 198
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2298b6f7c9d39be10800000000000000
+      internalID: 2213868434191255842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_18
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 198
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756bf4f4cee00f460800000000000000
+      internalID: 7273329806309045847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_19
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 198
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e82f63eb7aa6320800000000000000
+      internalID: 2552036574266297973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca44ee4e103814ff0800000000000000
+      internalID: -53617676392708948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_21
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 99
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90cdf670807c624e0800000000000000
+      internalID: -2006697746648540151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_22
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 99
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283a90cf84c1e08d0800000000000000
+      internalID: -2878332012051455102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_23
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 99
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803ca24b45142a460800000000000000
+      internalID: 7251430182075679496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_24
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 99
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373be2f6baf34a9d0800000000000000
+      internalID: -2764014265761352845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_25
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 99
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dc164aecd2394c0800000000000000
+      internalID: -4282028455154823912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6dc1acad6d67bc0800000000000000
+      internalID: -3785602201576221013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_27
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ca7bc72cbe75ac0800000000000000
+      internalID: -3866362534525686744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_28
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeaaceff3dbf1df60800000000000000
+      internalID: 8057498096292899566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_29
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b175c60652b44950800000000000000
+      internalID: 6432462250342445495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_30
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10413e9124af19170800000000000000
+      internalID: 8183597159717999617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decontaminator_31
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 0
+        width: 57
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d316e7d614b0540800000000000000
+      internalID: 4975142151888387356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
