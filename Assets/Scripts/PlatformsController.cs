@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformsController : MonoBehaviour
 {
     public GameObject cleanPlatform;
+    public GameObject infectedPlatform;
 
     private PlayerController playerController;
     private float platformScrollingSpeed {get;set;}
@@ -21,17 +20,28 @@ public class PlatformsController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //transform.position = transform.position + Vector3.left * platformScrollingSpeed * Time.deltaTime;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Boundary")
         {
-            Destroy(gameObject);
 
             if (gameObject.tag == "InfectedPlatform")
+            {
+                if(GameObject.FindGameObjectsWithTag("CleanPlatform").Length != 0)
+                {
+                    GameObject platformSpread = GameObject.FindGameObjectsWithTag("CleanPlatform")[0];
+                    GameObject newInfectedPlatform = Instantiate(infectedPlatform, platformSpread.transform.position, platformSpread.transform.rotation);
+                    newInfectedPlatform.GetComponent<BoxCollider2D>().enabled = true;
+                    newInfectedPlatform.GetComponent<Rigidbody2D>().velocity = Vector2.left * platformScrollingSpeed;
+                    Destroy(platformSpread);
+                }
+
                 playerController.playerScore--;
+            }
+
+            Destroy(gameObject);
         }
     }
 
@@ -41,6 +51,7 @@ public class PlatformsController : MonoBehaviour
         {
             Instantiate(cleanPlatform, transform.position, transform.rotation);
             Destroy(gameObject);
+
             playerController.playerScore += 2;
         }
     }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -27,7 +25,7 @@ public class GameController : MonoBehaviour
 
         platformDelayCounter++;
 
-        if (playerController.playerScore <= -1)
+        if (playerController.playerScore <= -20)
         {
             gameOverMenu.ActivateGameOverMenu();
         }
