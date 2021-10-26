@@ -21,6 +21,6 @@ public class EnemyController : MonoBehaviour
         else
             cleanAnimator.SetFloat("Horizontal", enemyRigidbody.velocity.x);
 
-        enemyRigidbody.velocity = (transform.right * new Vector2(1, 0)).normalized * 800;
+        enemyRigidbody.velocity = (transform.right * new Vector2(1, 0)).normalized * -400;
     }
 }
