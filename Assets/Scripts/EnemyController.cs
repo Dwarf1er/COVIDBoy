@@ -16,8 +16,10 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        infectedAnimator.SetFloat("Horizontal", enemyRigidbody.velocity.x);
-        cleanAnimator.SetFloat("Horizontal", enemyRigidbody.velocity.x);
+        if(gameObject.tag == "InfectedEnemy")
+            infectedAnimator.SetFloat("Horizontal", enemyRigidbody.velocity.x);
+        else
+            cleanAnimator.SetFloat("Horizontal", enemyRigidbody.velocity.x);
 
         enemyRigidbody.velocity = (transform.right * new Vector2(1, 0)).normalized * 800;
     }

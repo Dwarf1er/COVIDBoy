@@ -333,3 +333,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cleanPlatform: {fileID: 4937129739516362838, guid: a781b41f25c04ba48be3193b070f033c, type: 3}
   infectedPlatform: {fileID: 4937129739516362838, guid: add0dad37a1b1bd4c9624ac214432041, type: 3}
+  cleanEnemy: {fileID: 2570503580931117977, guid: e77bff9729a232e4786872d4b516c55b, type: 3}
+  infectedEnemy: {fileID: 5585698560928400031, guid: 53eb6c8dbcdfb8e4c900fb102971c283, type: 3}
+  spawnPoint1: {fileID: 0}
+  spawnPoint2: {fileID: 0}
+  gameOverMenu: {fileID: 0}

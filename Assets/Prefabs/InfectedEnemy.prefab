@@ -165,4 +165,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infectedAnimator: {fileID: 5585698560928400028}
-  cleanAnimator: {fileID: 0}
+  cleanAnimator: {fileID: 2570503580931117976, guid: e77bff9729a232e4786872d4b516c55b, type: 3}

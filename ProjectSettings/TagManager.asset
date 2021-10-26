@@ -9,6 +9,7 @@ TagManager:
   - InfectedPlatform
   - CleanEnemy
   - InfectedEnemy
+  - Mask
   layers:
   - Default
   - TransparentFX
