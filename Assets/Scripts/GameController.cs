@@ -11,14 +11,24 @@ public class GameController : MonoBehaviour
     public GameObject spawnPoint3;
     public GameObject spawnPoint4;
     public GameOverMenu gameOverMenu;
-    private PlayerController playerController;
+    public static bool isVariantGameMode = false;
+    public static int playerScorePenalty = 1;
+    public static int playerScoreBonus = 2;
     private int platformDelayCounter = 0;
+    private int minSpawnWait = 5;
+    private int maxSpawnWait = 25;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         StartCoroutine(MobSpawnLoop());
+        if (isVariantGameMode)
+        {
+            minSpawnWait = 2;
+            maxSpawnWait = 5;
+            playerScorePenalty = 2;
+            playerScoreBonus = 1;
+        }
     }
 
     // Update is called once per frame
@@ -72,7 +82,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator MobSpawnLoop()
     {
-        yield return new WaitForSeconds(Random.Range(5, 25));
+        yield return new WaitForSeconds(Random.Range(minSpawnWait, maxSpawnWait));
 
         int randomSpawnPoint = Random.Range(0, 4);
 

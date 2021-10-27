@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,8 @@ public class PlayerController : MonoBehaviour
     private float timeBeforeNextShot;
     private Vector3 rightShotPosition;
     private Vector3 leftShotPosition;
+    private float timeBeforeNextSpeedBoost;
+    private float playerBoostCooldown = 3f;
 
     // Start is called before the first frame update
     private void Start()
@@ -42,6 +45,8 @@ public class PlayerController : MonoBehaviour
         MovePlayer();
 
         GameObject.Find("ScoreText").GetComponent<Text>().text = playerScore.ToString();
+        Debug.Log("Player movement speed: " + playerMovementSpeed);
+        //Debug.Log("Player velocity: " + playerRigidbody.velocity);
     }
 
     private void MovePlayer()
@@ -57,6 +62,13 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && timeBeforeNextShot < Time.time)
             ShootPlayer();
+
+        if(Input.GetKeyDown(KeyCode.Q) && GameController.isVariantGameMode && timeBeforeNextSpeedBoost < Time.time)
+        {
+            Debug.Log("BOOST START");
+            StartCoroutine(BoostPlayer());
+            Debug.Log("BOOST END");
+        }
 
         if (playerVelocity != notMoving)
         {
@@ -92,6 +104,14 @@ public class PlayerController : MonoBehaviour
         Instantiate(mask, playerMaskOrigin.position, Quaternion.Euler(0, 0, fireAngle));
 
         timeBeforeNextShot = Time.time + playerFireRate;
+    }
+
+    private IEnumerator BoostPlayer()
+    {
+        playerMovementSpeed *= 2;
+        yield return new WaitForSeconds(3);
+        playerMovementSpeed /= 2;
+        timeBeforeNextSpeedBoost = Time.time + playerBoostCooldown;
     }
 
     private void OnCollisionStay2D(Collision2D collision)

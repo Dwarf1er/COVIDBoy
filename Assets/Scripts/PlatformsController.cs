@@ -35,7 +35,7 @@ public class PlatformsController : MonoBehaviour
                     Destroy(platformSpread);
                 }
 
-                PlayerController.playerScore--;
+                PlayerController.playerScore -= GameController.playerScorePenalty;
             }
 
             Destroy(gameObject);
@@ -49,7 +49,7 @@ public class PlatformsController : MonoBehaviour
             Instantiate(cleanPlatform, transform.position, transform.rotation);
             Destroy(gameObject);
 
-            PlayerController.playerScore += 2;
+            PlayerController.playerScore += GameController.playerScoreBonus;
         }
     }
 }

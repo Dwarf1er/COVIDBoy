@@ -15,7 +15,9 @@ public class MainMenu : MonoBehaviour
         quitButton = GameObject.Find("QuitButton").GetComponent<Button>();
 
         newGameButton.onClick.AddListener(() => SceneManager.LoadScene("Game"));
+        newGameButton.onClick.AddListener(() => GameController.isVariantGameMode = false);
         newGamePlusButton.onClick.AddListener(() => SceneManager.LoadScene("Game"));
+        newGamePlusButton.onClick.AddListener(() => GameController.isVariantGameMode = true);
         quitButton.onClick.AddListener(() => Application.Quit());
     }
 }
