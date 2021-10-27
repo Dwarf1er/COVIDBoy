@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public Animator animator;
     public GameObject mask;
-    public int playerScore = 0;
+    public static int playerScore = 0;
     public bool isPlayerFacingRight = true;
 
     private Rigidbody2D playerRigidbody { get; set; }

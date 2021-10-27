@@ -5,14 +5,11 @@ public class PlatformsController : MonoBehaviour
     public GameObject cleanPlatform;
     public GameObject infectedPlatform;
 
-    private PlayerController playerController;
     private float platformScrollingSpeed {get;set;}
 
     // Start is called before the first frame update
     private void Start()
     {
-        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
-        
         platformScrollingSpeed = 200f;
         GetComponent<Rigidbody2D>().velocity = Vector2.left * platformScrollingSpeed;
     }
@@ -38,7 +35,7 @@ public class PlatformsController : MonoBehaviour
                     Destroy(platformSpread);
                 }
 
-                playerController.playerScore--;
+                PlayerController.playerScore--;
             }
 
             Destroy(gameObject);
@@ -52,7 +49,7 @@ public class PlatformsController : MonoBehaviour
             Instantiate(cleanPlatform, transform.position, transform.rotation);
             Destroy(gameObject);
 
-            playerController.playerScore += 2;
+            PlayerController.playerScore += 2;
         }
     }
 }

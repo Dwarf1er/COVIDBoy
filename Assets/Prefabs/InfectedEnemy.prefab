@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5585698560928400002}
   - component: {fileID: 5585698560928400029}
   - component: {fileID: 5585698560928400028}
-  - component: {fileID: 5585698560928400001}
-  m_Layer: 0
+  - component: {fileID: 3461961095659437606}
+  m_Layer: 8
   m_Name: InfectedEnemy
   m_TagString: InfectedEnemy
   m_Icon: {fileID: 0}
@@ -122,12 +122,12 @@ Rigidbody2D:
   m_GameObject: {fileID: 5585698560928400031}
   m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2000
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -152,7 +152,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5585698560928400001
+--- !u!114 &3461961095659437606
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,5 +164,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbf3737e4686033418a7252c039f8568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infectedAnimator: {fileID: 5585698560928400028}
-  cleanAnimator: {fileID: 2570503580931117976, guid: e77bff9729a232e4786872d4b516c55b, type: 3}
+  animator: {fileID: 5585698560928400028}
+  cleanEnemy: {fileID: 2570503580931117977, guid: e77bff9729a232e4786872d4b516c55b, type: 3}

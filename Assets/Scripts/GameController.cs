@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GameController : MonoBehaviour
@@ -17,6 +18,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        StartCoroutine(MobSpawnLoop());
     }
 
     // Update is called once per frame
@@ -29,7 +31,7 @@ public class GameController : MonoBehaviour
             platformDelayCounter = 0;
         }
 
-        if (playerController.playerScore <= -20)
+        if (PlayerController.playerScore <= -20)
         {
             gameOverMenu.ActivateGameOverMenu();
         }
@@ -48,17 +50,35 @@ public class GameController : MonoBehaviour
             Instantiate(infectedPlatform, new Vector3(2250, Random.Range(40, 65) * 10, 0), Quaternion.identity);
     }
 
+    private void InstantiateEnemyAt(int spawnIndex)
+    {
+
+        if (spawnIndex == 0)
+            Instantiate(infectedEnemy, spawnPoint1.GetComponent<Transform>().position, Quaternion.identity);
+        else if (spawnIndex == 1)
+            Instantiate(infectedEnemy, spawnPoint2.GetComponent<Transform>().position, Quaternion.identity);
+        else if (spawnIndex == 2)
+            Instantiate(infectedEnemy, spawnPoint3.GetComponent<Transform>().position, Quaternion.identity);
+        else
+            Instantiate(infectedEnemy, spawnPoint4.GetComponent<Transform>().position, Quaternion.identity);
+    }
+
     private void InstantiateEnemy()
     {
         int randomSpawnPoint = Random.Range(0, 4);
 
-        if (randomSpawnPoint == 0)
-            Instantiate(infectedEnemy, spawnPoint1.GetComponent<Transform>().position, Quaternion.identity);
-        else if (randomSpawnPoint == 1)
-            Instantiate(infectedEnemy, spawnPoint2.GetComponent<Transform>().position, Quaternion.identity);
-        else if (randomSpawnPoint == 2)
-            Instantiate(infectedEnemy, spawnPoint3.GetComponent<Transform>().position, Quaternion.identity);
-        else
-            Instantiate(infectedEnemy, spawnPoint4.GetComponent<Transform>().position, Quaternion.identity);
+        InstantiateEnemyAt(randomSpawnPoint);
+    }
+
+    private IEnumerator MobSpawnLoop()
+    {
+        yield return new WaitForSeconds(Random.Range(5, 25));
+
+        int randomSpawnPoint = Random.Range(0, 4);
+
+        for (int i = 0; i < 3; i++)
+            InstantiateEnemyAt(randomSpawnPoint);
+
+        StartCoroutine(MobSpawnLoop());
     }
 }

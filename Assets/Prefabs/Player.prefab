@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1725314350206300142}
   - component: {fileID: 1725314350206300146}
   - component: {fileID: 1725314350206300147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1426870721979612672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: maskOrigin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
