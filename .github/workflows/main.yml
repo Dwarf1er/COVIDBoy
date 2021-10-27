@@ -11,6 +11,10 @@ jobs:
         - name: Decrypt the license file
           run: openssl aes-256-cbc -d -in .github/Unity_v2020.x.ulf.enc -k ${{ secrets.UNITY_LICENSE_DECRYPTION_KEY }} >> .github/Unity_v2020.x.ulf
         
+        # Install unity 2020.3.17f1
+        - name: Install Unity 2020.3.17f1
+          run: unity-hub install --version 2020.3.17f1 --changeset a4537701e4ab
+          
         # Activate unity
         - name: Activate Unity
           run: /opt/unity/editors/2020.3.17f1/Editor/Unity -quit -batchmode -nographics -silent-crashes -logFile -manualLicenseFile .github/Unity_v2020.x.ulf || exit 0
