@@ -68,7 +68,6 @@ This project is licensed under [The MIT License (MIT)](LICENSE)
 ## Acknowledgments
 
   - **Billie Thompson**, this README was based on the template provided [here](https://github.com/PurpleBooth/a-good-readme-template)
-  - **Mikkel Paulson**, this project was inspired by the project found [here](https://github.com/MikkelPaulson/smart-health-card-parser)
   - **2D Sprites**, the sprites for the characters in this game were inspired by the royalty free templates you can find [here](https://craftpix.net/freebies/free-3-character-sprite-sheets-pixel-art/)
   - **Patrick de Arteaga**, the soundtrack for this game, Acción (Merodeador Nocturno), was provided royalty free and can be found [here](https://patrickdearteaga.com/)
   - **GameCI**, the build deployment was made with the help of the GameCI documentation found [here](https://github.com/game-ci/documentation)
