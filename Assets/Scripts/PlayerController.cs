@@ -45,8 +45,6 @@ public class PlayerController : MonoBehaviour
         MovePlayer();
 
         GameObject.Find("ScoreText").GetComponent<Text>().text = playerScore.ToString();
-        Debug.Log("Player movement speed: " + playerMovementSpeed);
-        //Debug.Log("Player velocity: " + playerRigidbody.velocity);
     }
 
     private void MovePlayer()
@@ -64,11 +62,7 @@ public class PlayerController : MonoBehaviour
             ShootPlayer();
 
         if(Input.GetKeyDown(KeyCode.Q) && GameController.isVariantGameMode && timeBeforeNextSpeedBoost < Time.time)
-        {
-            Debug.Log("BOOST START");
             StartCoroutine(BoostPlayer());
-            Debug.Log("BOOST END");
-        }
 
         if (playerVelocity != notMoving)
         {

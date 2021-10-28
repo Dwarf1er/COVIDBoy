@@ -1,6 +1,10 @@
 # COVIDBoy
 This is the repository for Assignment 2 of COMP 376 - Introduction to Game Development Fall 2021 at Concordia University. This assignment is taking inspiration from the 1985 arcade game [Paperboy](https://en.wikipedia.org/wiki/Paperboy_(video_game)) but taking it to the modern context of the COVID-19 pandemic. You are playing a decontaminator, your job is to cleanse the platforms and throw masks at pedestrians to prevent the spread of the virus. This 2D side-scroller platform game is never ending and contains 2 game modes! Beware, you will lose if the virus spreads too much.
 
+## Demo Video
+
+You can download a copy of the demo video under the demo subdirectory of this repository!
+
 ## Art
 
 All of the visuals were created by the author using [GIMP](https://www.gimp.org/) and the characters were based on a royalty free sprite template sheet. The reference material is linked at the end of this README.
@@ -20,24 +24,33 @@ All of the visuals were created by the author using [GIMP](https://www.gimp.org/
 
 ## Getting Started
 
-To clone and run this application, you'll need [Unity 2020.3.17f1](https://unity3d.com/get-unity/download?thank-you=update&download_nid=65098&os=Win) installed on your computer.
+To run this game, you'll need [Unity 2020.3.17f1](https://unity3d.com/get-unity/download?thank-you=update&download_nid=65098&os=Win) installed on your computer and the [TextMeshPro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html) package installed in Unity.
 
-## How To Use This Project
-
-### Controls
+## Game Controls
 
 Action | Key on keyboard
 --- | --- 
-Move left | `w`
+Move left | `a`
 Move right | `d` 
 Jump | `space`
 Shoot masks | `left click`
 Speed boost (new game plus only) | `q`
-Quit game | `escape`
+Back to main menu | `escape`
+
+## How To Use This Project
+
+### Windows Build
+
+Download the latest build by clicking [here](https://github.com/Dwarf1er/COVIDBoy/releases/)
+
+### WebGL Build In Your Browser
+
+To play COVIDBoy in your web browser click [here](https://dwarf1er.github.io/COVIDBoy/)
 
 ### Prerequisites
  
 - [Unity 2020.3.17f1](https://unity3d.com/get-unity/download?thank-you=update&download_nid=65098&os=Win)
+- [TextMeshPro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html)
 
 ## Authors
 

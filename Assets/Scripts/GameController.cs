@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -14,13 +15,14 @@ public class GameController : MonoBehaviour
     public static bool isVariantGameMode = false;
     public static int playerScorePenalty = 1;
     public static int playerScoreBonus = 2;
-    private int platformDelayCounter = 0;
     private int minSpawnWait = 5;
     private int maxSpawnWait = 25;
 
     // Start is called before the first frame update
     void Start()
     {
+        PlayerController.playerScore = 0;
+        StartCoroutine(InstantiatePlatform());
         StartCoroutine(MobSpawnLoop());
         if (isVariantGameMode)
         {
@@ -34,33 +36,30 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(platformDelayCounter == 3600)
-        {
-            InstantiatePlatform();
-            InstantiateEnemy();
-            platformDelayCounter = 0;
-        }
 
         if (PlayerController.playerScore <= -20)
         {
             gameOverMenu.ActivateGameOverMenu();
         }
 
-        platformDelayCounter++;
-
         if (Input.GetKeyDown(KeyCode.Escape))
-            Application.Quit();
+            SceneManager.LoadScene("Menu");
 
     }
 
-    private void InstantiatePlatform()
+    private IEnumerator InstantiatePlatform()
     {
+        yield return new WaitForSeconds(5);
+
         int platformType = Random.Range(0, 2);
 
         if(platformType == 0)
             Instantiate(cleanPlatform, new Vector3(2250, Random.Range(40, 65) * 10, 0), Quaternion.identity);
         else
             Instantiate(infectedPlatform, new Vector3(2250, Random.Range(40, 65) * 10, 0), Quaternion.identity);
+
+        InstantiateEnemy();
+        StartCoroutine(InstantiatePlatform());
     }
 
     private void InstantiateEnemyAt(int spawnIndex)
