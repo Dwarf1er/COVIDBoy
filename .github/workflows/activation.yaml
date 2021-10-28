@@ -10,10 +10,11 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: game-ci/unity-request-activation-file@v2
+        with:
+          unityVersion: 2020.3.17f1
         id: getManualLicenseFile
 
       - uses: actions/upload-artifact@v2
         with:
           name: Manual Activation File
-          unityVersion: 2020.3.17f1
           path: ${{ steps.getManualLicenseFile.outputs.filePath }}
