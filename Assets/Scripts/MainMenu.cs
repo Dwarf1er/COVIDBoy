@@ -20,4 +20,10 @@ public class MainMenu : MonoBehaviour
         newGamePlusButton.onClick.AddListener(() => GameController.isVariantGameMode = true);
         quitButton.onClick.AddListener(() => Application.Quit());
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+    }
 }

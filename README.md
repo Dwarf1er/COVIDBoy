@@ -33,6 +33,7 @@ Move right | `d`
 Jump | `space`
 Shoot masks | `left click`
 Speed boost (new game plus only) | `q`
+Quit game | `escape`
 
 ### Prerequisites
  

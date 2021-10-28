@@ -48,6 +48,9 @@ public class GameController : MonoBehaviour
 
         platformDelayCounter++;
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+
     }
 
     private void InstantiatePlatform()
