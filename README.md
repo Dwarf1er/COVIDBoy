@@ -3,7 +3,7 @@ This is the repository for Assignment 2 of COMP 376 - Introduction to Game Devel
 
 ## Demo Video
 
-You can download a copy of the demo video under the demo subdirectory of this repository!
+https://user-images.githubusercontent.com/43828340/139204060-b4a7f979-e19d-40dd-af40-5d9dc76d4aa0.mp4
 
 ## Art
 
@@ -11,12 +11,14 @@ All of the visuals were created by the author using [GIMP](https://www.gimp.org/
 
 ## Normal Game Mode
 
+- Jump on platforms to clean them
 - Cleaned platforms give you 2 points
 - Missed platforms make you lose 1 point
 - You lose if your score gets to -20
 
 ## New Game Plus Game Mode
 
+- Jump on platforms to clean them
 - Cleaned platforms give you 1 point
 - Missed platforms make you lose 2 points
 - Pressing Q will double your movement speed for 3 seconds, this ability can be activated every 10 seconds
@@ -38,6 +40,8 @@ Speed boost (new game plus only) | `q`
 Back to main menu | `escape`
 
 ## How To Use This Project
+
+This game has 2 available builds: a build for desktop on Windows available in the realeases of this repo and a web browser version avaialable on the GitHub pages for this repo.
 
 ### Windows Build
 
